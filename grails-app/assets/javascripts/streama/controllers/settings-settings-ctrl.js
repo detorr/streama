@@ -110,7 +110,7 @@ angular.module('streama').controller('settingsSettingsCtrl',
   };
 
   $scope.resetBaseURL = function (settings) {
-    settings.value = 'http://localhost:8080';
+    settings.value = 'http://localhost:8089';
     settings.valid = true;
   }
 
