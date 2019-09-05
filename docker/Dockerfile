@@ -1,6 +1,6 @@
 FROM openjdk:8-jre-slim
 VOLUME /data
-EXPOSE 8080
+EXPOSE 8085
 ENV ACTIVE_PROFILE=docker
 
 WORKDIR /app
