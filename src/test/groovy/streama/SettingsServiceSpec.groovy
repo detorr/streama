@@ -11,11 +11,11 @@ class SettingsServiceSpec extends Specification {
     setup:
       def settingsService = SettingsService.newInstance()
       def settings = [
-              new Settings(settingsKey: 'Base URL', value: 'http://localhost:8080/streama')
+              new Settings(settingsKey: 'Base URL', value: 'http://localhost:8089/streama')
       ]
       settings*.save(flush: true)
       def result = settingsService.getBaseUrl()
     expect:
-      result == 'http://localhost:8080/streama'
+      result == 'http://localhost:8089/streama'
   }
 }
